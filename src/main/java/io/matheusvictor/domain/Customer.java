@@ -1,6 +1,5 @@
 package io.matheusvictor.domain;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -32,7 +31,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Costumer {
+public class Customer {
     @Id
     @GeneratedValue
     private Long id;
