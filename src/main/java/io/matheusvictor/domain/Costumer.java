@@ -1,7 +1,12 @@
-package io.matheusvictor;
+package io.matheusvictor.domain;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 
 /**
@@ -23,7 +28,16 @@ import jakarta.persistence.Entity;
  * }
  * }
  */
+@NoArgsConstructor
+@Getter
+@Setter
 @Entity
-public class MyEntity extends PanacheEntity {
-    public String field;
+public class Costumer {
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String name;
+    private String lastName;
+    private Integer age;
+    private String email;
 }

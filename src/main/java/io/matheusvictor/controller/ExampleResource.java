@@ -1,4 +1,4 @@
-package io.matheusvictor;
+package io.matheusvictor.controller;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
